@@ -1,0 +1,39 @@
+name: 'Medium Product label'
+
+size:
+  width: 58
+  height: 40
+
+
+layouts:
+- EAN8:
+    font:
+      name: 'LiberationSans-Regular'
+      size: 7
+    bar_width: 0.62
+    bar_height_ratio: 0.5
+    margin: 2.5
+
+- UPCA:
+    font:
+      name: 'LiberationSans-Regular'
+      size: 7
+    bar_width: 0.48
+    bar_height_ratio: 0.5
+    margin: 2
+
+- EAN13:
+    font:
+      name: 'LiberationSans-Regular'
+      size: 7
+    bar_width: 0.48
+    bar_height_ratio: 0.5
+    margin: 2
+
+- CODE128:
+    font:
+      name: 'LiberationSans-Regular'
+      size: 7
+    bar_width: 0.30
+    bar_height_ratio: 0.35
+    margin: 2

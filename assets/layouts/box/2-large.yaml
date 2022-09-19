@@ -1,0 +1,19 @@
+name: 'Big label to Boxes'
+
+size:
+  width: 70
+  height: 49
+
+layouts:
+- CODE128:
+    font:
+      name: 'LiberationSans-Bold'
+      size: 13
+
+    font_barcode_value:
+      name: 'LiberationSans-Bold'
+      size: 19
+
+    bar_width: 0.48
+    bar_height_ratio: 0.33
+    margin: 5

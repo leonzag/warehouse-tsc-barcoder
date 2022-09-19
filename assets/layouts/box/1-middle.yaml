@@ -1,0 +1,19 @@
+name: 'Middle label to Boxes'
+
+size:
+  width: 58
+  height: 40
+
+layouts:
+- CODE128:
+    font:
+      name: 'LiberationSans-Bold'
+      size: 10
+
+    font_barcode_value:
+      name: 'LiberationSans-Bold'
+      size: 15
+
+    bar_width: 0.40
+    bar_height_ratio: 0.33
+    margin: 5
