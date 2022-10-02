@@ -2,28 +2,58 @@
 
 ## Описание
 Целью этого _приложения_, является автоматизация **создания этикеток** на основе источника данных (файл-Excel),
-для последующей печати на принтере (напр. TSC ML240).
+для последующей печати на принтере (_напр. **TSC ML240**_).
 
-Программный интерфейс написан с использованием графического фреймворка PySide6 (Qt for python),
-а отрисовка этикеток в файл PDF осуществляется посредством библиотеки ReportLab
+Программный интерфейс написан с использованием графического фреймворка **PySide6** _(Qt for python)_,
+а отрисовка этикеток в файл **PDF** осуществляется посредством библиотеки **ReportLab**
 
-![alt text](readme-assets/application-mainwindow.png "application-mainwindow")
+![<<Изображение главного окна приложения>>](readme-assets/application-mainwindow.png "application-mainwindow")
 
 ### Примечание
 Требуется версия **Python 3.10+**
 
+## Установка
+Создайте и активируйте виртуальное окружение python. Установите необходмые пакеты.\
+После этого необходимо запустить скрипт ```install.py``` который подготовит проект к запуску а также создаст исполняемый контейнер.
+
+### Для Windows:
+#### Примечание:
+Возможно, необходимо будет изменить политику исполнения скриптов:
+```ps1
+Set-ExecutionPolicy RemoteSigned -Scope Process
+```
+```ps1
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python install.py
+```
+
+### Для Linux:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python install.py
+```
+
 ## Запуск
 Предварительно скомпонованное в исполняемый контейнер приложение (например **_EXE_**) запускается тривиально,
-а в случае с **Linux** также необходимо сделать его **исполняемым**:\
-`$ chmod +x ./Barcoder`
+а в случае с **Linux** также необходимо сделать его **исполняемым**:
+```bash
+chmod +x './dist/Barcoder'
+```
 
 ### Windows
-    $ .venv\Scripts\activate
-    $ python3 main.py
-
+```ps1
+.venv\Scripts\activate
+python 'main.py'
+```
 ### Linux
-    $ source .venv/bin/activate
-    $ python main.py
+```bash
+source '.venv/bin/activate'
+python 'main.py'
+```
 
 ## Использование
 Необходим **Excel-файл** с данными, который подключается в приложении.
