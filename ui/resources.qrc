@@ -1,6 +1,6 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource>
-        <file>assets/img/barcode.png</file>
-        <file>assets/img/favicon.ico</file>
+        <file>../assets/img/barcode.png</file>
+        <file>../assets/img/favicon.ico</file>
     </qresource>
 </RCC>
