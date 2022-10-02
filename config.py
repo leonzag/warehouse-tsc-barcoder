@@ -5,8 +5,9 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent
 HOME_DIR = Path.home()
-THEME_NAME = 'dark_lightgreen'
+APP_NAME = 'Barcoder'
 APP_ICON = 'favicon.ico'
+THEME_NAME = 'dark_lightgreen'
 
 LAYOUTS_DIRNAME = 'layouts'
 FONT_DIRNAME = 'fonts'
